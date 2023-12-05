@@ -54,12 +54,11 @@ public class Hogwarts {
         return name + ' ' + surname + ", Сила колдовства: " + magicPower + ", дистанция трансгрессирования: "
                 + tgDistance + '.';
     }
-    public void compareStudents(Object obj) {
-        Hogwarts other = (Hogwarts) obj;
-        if (this.score > other.score) {
-            System.out.println(this.getName() + " обладает бОльшей мощностью магии, чем " + other.getName());
+    public void compareStudents(Hogwarts hogwarts) {
+        if (hogwarts.score > this.score) {
+            System.out.println(hogwarts.getName() + " обладает бОльшей мощностью магии, чем " + this.getName());
         } else {
-            System.out.println(other.getName() + " обладает бОльшей мощностью магии, чем " + this.getName());
+            System.out.println(this.getName() + " обладает бОльшей мощностью магии, чем " + hogwarts.getName());
         }
     }
 

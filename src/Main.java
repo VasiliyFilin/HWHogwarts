@@ -48,5 +48,7 @@ public class Main {
         gryffindorian[1].compareStudents(gryffindorian[2]);
         System.out.println("===========================\n");
         hogwarts[0].compareStudents(hogwarts[9]);
+        System.out.println("===========================\n");
+        slytherinian[0].compareStudents(slytherinian[2]);
     }
 }

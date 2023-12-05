@@ -66,12 +66,11 @@ public class Slytherin extends Hogwarts{
                 ", амбициозность: " + ambition +
                 ", жажда власти: " + lustForPower + '.';
     }
-    public void compareStudents(Object obj) {
-        Slytherin other = (Slytherin) obj;
-        if (this.score > other.score) {
-            System.out.println(this.getName() + " лучший Слизеринец, чем " + other.getName());
+    public void compareStudents(Slytherin slytherin) {
+        if (slytherin.score > this.score) {
+            System.out.println(slytherin.getName() + " лучший Слизеринец, чем " + this.getName());
         } else {
-            System.out.println(other.getName() + " лучший Слизеринец, чем " + this.getName());
+            System.out.println(this.getName() + " лучший Слизеринец, чем " + slytherin.getName());
         }
     }
 

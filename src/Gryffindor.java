@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Gryffindor extends Hogwarts {
     private int nobility;
     private int honor;
@@ -45,12 +43,11 @@ public class Gryffindor extends Hogwarts {
                 ", честь: " + honor +
                 ", храбрость: " + bravery + '.';
     }
-    public void compareStudents(Object obj) {
-        Gryffindor other = (Gryffindor) obj;
-        if (this.score > other.score) {
-            System.out.println(this.getName() + " лучший Гриффиндорец, чем " + other.getName());
+    public void compareStudents(Gryffindor gryffindor) {
+        if (gryffindor.score > this.score) {
+            System.out.println(gryffindor.getName() + " лучший Гриффиндорец, чем " + this.getName());
         } else {
-            System.out.println(other.getName() + " лучший Гриффиндорец, чем " + this.getName());
+            System.out.println(this.getName() + " лучший Гриффиндорец, чем " + gryffindor.getName());
         }
     }
 }
